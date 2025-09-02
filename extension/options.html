@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Template Options</title>
+  <style>
+    body { font-family: sans-serif; padding: 10px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 8px; }
+    th, td { border: 1px solid #ccc; padding: 4px; }
+    input[type="text"] { width: 100%; }
+    .actions { margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h1>テンプレート管理</h1>
+  <div>
+    <label for="templateSelect">テンプレート:</label>
+    <select id="templateSelect"></select>
+    <button id="new">新規</button>
+  </div>
+  <div>
+    <label>名前: <input id="templateName" type="text" /></label>
+  </div>
+  <table id="fields">
+    <thead>
+      <tr><th>フィールド名</th><th>値</th><th></th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <button id="addField">フィールド追加</button>
+  <div class="actions">
+    <button id="save">保存</button>
+    <button id="delete">削除</button>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
